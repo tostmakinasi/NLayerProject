@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NLayerProject.Core.Models
 {
-    class Product
+    public class Product
     {
 
         public int Id { get; set; }

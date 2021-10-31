@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NLayerProject.Core.Models
 {
-    class Category
+    public class Category
     {
         public Category()
         {
