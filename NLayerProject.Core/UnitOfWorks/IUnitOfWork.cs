@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NLayerProject.Core.UnitOfWorks
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
         IProductRepository Products { get; }
 
