@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NLayerProject.Service.Services
 {
-    class ProductService : Service<Product>, IProductService
+    public class ProductService : Service<Product>, IProductService
     {
         public ProductService(IUnitOfWork unitOfWork, IRepository<Product> repository) : base(unitOfWork,repository)
         {

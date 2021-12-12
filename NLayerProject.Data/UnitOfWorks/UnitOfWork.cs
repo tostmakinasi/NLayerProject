@@ -29,33 +29,14 @@ namespace NLayerProject.Data.UnitOfWorks
 
         public void Commit()
         {
-            OnBeforeSaving();
             _context.SaveChanges();
         }
 
         public async Task CommitAsync()
         {
-            OnBeforeSaving();
             await _context.SaveChangesAsync();
         }
 
-        //Soft Deleting
-        private void OnBeforeSaving()
-        {
-            foreach (var entry in _context.ChangeTracker.Entries())
-            {
-                switch (entry.State)
-                {
-                    case EntityState.Added:
-                        entry.CurrentValues["IsDeleted"] = false;
-                        break;
-
-                    case EntityState.Deleted:
-                        entry.State = EntityState.Modified;
-                        entry.CurrentValues["IsDeleted"] = true;
-                        break;
-                }
-            }
-        }
+        
     }
 }
