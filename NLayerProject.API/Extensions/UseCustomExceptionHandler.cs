@@ -26,7 +26,7 @@ namespace NLayerProject.API.Extensions
                     {
                         var ex = error.Error;
 
-                        ErrorDto errorDto = new ErrorDto();
+                        ErrorDto errorDto = new();
                         errorDto.Status = 500;
                         errorDto.Errors.Add(ex.Message);
 

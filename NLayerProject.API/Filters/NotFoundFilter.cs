@@ -24,7 +24,7 @@ namespace NLayerProject.API.Filters
 
             var product = await _productService.GetByIdAsync(id);
 
-            if (product != null)
+            if (product != null && product.IsDeleted != true)
                 await next();
             else
             {

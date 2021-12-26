@@ -67,5 +67,7 @@ namespace NLayerProject.Data.Repositories
 
             return entity;
         }
+
+        
     }
 }

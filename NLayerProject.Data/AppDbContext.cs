@@ -39,7 +39,10 @@ namespace NLayerProject.Data
             modelBuilder.Entity<Person>().Property(x => x.Id).UseIdentityColumn();
             modelBuilder.Entity<Person>().Property(x => x.Name).HasMaxLength(50);
             modelBuilder.Entity<Person>().Property(x => x.SurName).HasMaxLength(50);
+            modelBuilder.Entity<Person>().HasQueryFilter(x => x.IsDeleted == false);
+
         }
+
 
         public override int SaveChanges()
         {
@@ -52,6 +55,8 @@ namespace NLayerProject.Data
             OnBeforeSaving();
             return base.SaveChangesAsync(cancellationToken);
         }
+
+        
 
         //Soft Deleting
         private void OnBeforeSaving()

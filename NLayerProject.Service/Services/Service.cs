@@ -83,5 +83,7 @@ namespace NLayerProject.Service.Services
         {
             return await _repository.Where(predicate);
         }
+
+        
     }
 }

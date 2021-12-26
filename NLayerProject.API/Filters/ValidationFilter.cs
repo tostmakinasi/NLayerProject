@@ -15,7 +15,7 @@ namespace NLayerProject.API.Filters
         {
             if (!context.ModelState.IsValid)
             {
-                ErrorDto errorDto = new ErrorDto();
+                ErrorDto errorDto = new();
 
                 errorDto.Status = 400;
 
@@ -29,7 +29,6 @@ namespace NLayerProject.API.Filters
                 context.Result = new BadRequestObjectResult(errorDto);
             }
 
-           
         }
     }
 }

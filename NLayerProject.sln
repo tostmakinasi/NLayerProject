@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerProject.API", "NLayerProject.API\NLayerProject.API.csproj", "{1164FEE2-5930-4909-9A4A-A5D4D0F64958}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerProject.API", "NLayerProject.API\NLayerProject.API.csproj", "{1164FEE2-5930-4909-9A4A-A5D4D0F64958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerProject.Core", "NLayerProject.Core\NLayerProject.Core.csproj", "{019A6E02-2CF7-4C17-91E1-F56BC0611522}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerProject.Core", "NLayerProject.Core\NLayerProject.Core.csproj", "{019A6E02-2CF7-4C17-91E1-F56BC0611522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerProject.Data", "NLayerProject.Data\NLayerProject.Data.csproj", "{939D86B0-D85A-40FD-AC05-2E22C7FBDC08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerProject.Data", "NLayerProject.Data\NLayerProject.Data.csproj", "{939D86B0-D85A-40FD-AC05-2E22C7FBDC08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerProject.Service", "NLayerProject.Service\NLayerProject.Service.csproj", "{2AE74CDD-91AB-4FD5-A02D-CDB95FAD3FEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerProject.Service", "NLayerProject.Service\NLayerProject.Service.csproj", "{2AE74CDD-91AB-4FD5-A02D-CDB95FAD3FEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerProject.WebWithLayers", "NLayerProject.WebWithLayers\NLayerProject.WebWithLayers.csproj", "{F2F13F38-327C-412B-9D50-3C7FBD85BC5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerProject.Web", "NLayerProject.Web\NLayerProject.Web.csproj", "{0AB003B1-3786-4634-A558-4703A77BD8B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{2AE74CDD-91AB-4FD5-A02D-CDB95FAD3FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE74CDD-91AB-4FD5-A02D-CDB95FAD3FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE74CDD-91AB-4FD5-A02D-CDB95FAD3FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F13F38-327C-412B-9D50-3C7FBD85BC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F13F38-327C-412B-9D50-3C7FBD85BC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F13F38-327C-412B-9D50-3C7FBD85BC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F13F38-327C-412B-9D50-3C7FBD85BC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB003B1-3786-4634-A558-4703A77BD8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB003B1-3786-4634-A558-4703A77BD8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB003B1-3786-4634-A558-4703A77BD8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB003B1-3786-4634-A558-4703A77BD8B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

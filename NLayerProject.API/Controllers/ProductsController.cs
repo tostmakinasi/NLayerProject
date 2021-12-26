@@ -30,7 +30,7 @@ namespace NLayerProject.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            throw new Exception("Bir Hata Meydana Geldi.");
+           
             var products = await _productService.GetAllAsync();
 
             return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));

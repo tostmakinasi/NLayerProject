@@ -23,6 +23,8 @@ namespace NLayerProject.Data.Configurations
 
             builder.Property(x => x.InnerBarcode).HasMaxLength(50);
 
+            builder.HasQueryFilter(x => x.IsDeleted == false);
+
             builder.ToTable("Products");
         }
     }

@@ -17,9 +17,16 @@ namespace NLayerProject.Service.Services
         {
         }
 
+        public async Task<IEnumerable<Product>> GetAllWithCategoryAsync()
+        {
+            return await _unitOfWork.Products.GetAllWithCategoryAsync();
+        }
+
         public async Task<Product> GetWithCategoryByIdAsync(int productId)
         {
             return await _unitOfWork.Products.GetWithCategoryByIdAsync(productId);
         }
+
+
     }
 }

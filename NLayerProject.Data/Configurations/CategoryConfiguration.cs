@@ -19,6 +19,8 @@ namespace NLayerProject.Data.Configurations
 
             builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
 
+            builder.HasQueryFilter(x => x.IsDeleted == false);
+
             builder.ToTable("Categories");
         }
     }

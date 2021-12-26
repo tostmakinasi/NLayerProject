@@ -22,5 +22,10 @@ namespace NLayerProject.Data.Repositories
         {
             return await _appDbContext.Products.Include(x => x.Category).SingleOrDefaultAsync(x => x.Id.Equals(productId));
         }
+
+        public async Task<IEnumerable<Product>> GetAllWithCategoryAsync()
+        {
+            return await _appDbContext.Products.Include(x => x.Category).ToListAsync();
+        }
     }
 }

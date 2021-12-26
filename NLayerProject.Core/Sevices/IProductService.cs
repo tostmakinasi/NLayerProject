@@ -12,5 +12,7 @@ namespace NLayerProject.Core.Sevices
         //Product ile ilgili veri tabanıyla ilgisi olmayan methodların tanımlanacağı yer
         //bool ControlInnerBarcode(Product product);
         Task<Product> GetWithCategoryByIdAsync(int productId);
+
+        Task<IEnumerable<Product>> GetAllWithCategoryAsync();
     }
 }
